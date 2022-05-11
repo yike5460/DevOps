@@ -1,3 +1,3 @@
 [submodule "gitlab"]
 	path = gitlab
-	url = ./gitlab
+	url = https://gitlab.com/yike5460/serverlessworkshop.gitb
