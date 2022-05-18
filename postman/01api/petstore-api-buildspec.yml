@@ -2,7 +2,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - cd 01api
+      - cd postman/01api
       - aws cloudformation package --template-file petstore-api.yaml
                                    --s3-bucket codepipeline-with-postman
                                    --s3-prefix api-code
@@ -10,4 +10,4 @@ phases:
 artifacts:
   type: zip
   files:
-    - 01api/petstore-api-output.yaml
+    - postman/01api/petstore-api-output.yaml

@@ -201,7 +201,7 @@ Resources:
           - '/'
           - !Ref GitHubRepositoryName
         Type:  GITHUB
-        BuildSpec: 01api/petstore-api-buildspec.yml
+        BuildSpec: postman/01api/petstore-api-buildspec.yml
       TimeoutInMinutes: 10
       Tags:
       - Key: Name
@@ -307,7 +307,7 @@ Resources:
             TemplatePath: !Join
             - ''
             - - 'PetStoreAPI-BuildArtifact'
-              - '::01api/petstore-api-output.yaml'
+              - '::postman/01api/petstore-api-output.yaml'
             ActionMode: CHANGE_SET_REPLACE
             Capabilities: CAPABILITY_IAM
             ChangeSetName: pipeline-changeset
