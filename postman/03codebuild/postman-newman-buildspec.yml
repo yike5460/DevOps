@@ -16,7 +16,7 @@ phases:
     commands:
       - aws s3 cp "s3://${S3_BUCKET}/postman-env-files/PetStoreAPIEnvironment.postman_environment.json" ./postman/02postman/
       - aws s3 cp "s3://${S3_BUCKET}/postman-env-files/PetStoreAPI.postman_collection.json" ./postman/02postman/
-      - cd .postman/02postman
+      - cd ./postman/02postman
       - ./update-postman-env-file.sh
 
   build:
