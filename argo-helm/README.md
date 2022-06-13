@@ -20,3 +20,7 @@ To deploy our root application, push files in apps folder to git repo and apply 
 ```
 helm template apps/ | kubectl apply -f -
 ```
+
+It should display two applications, one to monitor the root (argo-helm/apps e.g.), the other to manage the cluster (argo-helm/charts e.g.)
+
+Credit to https://www.arthurkoziel.com/setting-up-argocd-with-helm/
